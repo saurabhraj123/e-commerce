@@ -1,24 +1,23 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: url('https://images.pexels.com/photos/2229490/pexels-photo-2229490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background: url('https://images.pexels.com/photos/160751/breeze-summer-girl-model-160751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
 `;
 
 const Wrapper = styled.div`
+  width: 40%;
+  background: white;
+  padding: 15px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
-  background: white;
-  width: 40%;
-  /* height: 50vh; */
-  padding: 15px;
   box-shadow: 1px 1px #e7faff;
 `;
 
@@ -47,6 +46,7 @@ const Info = styled.span`
   font-size: 15px;
   font-weight: 300;
 `;
+
 const Button = styled.button`
   align-self: flex-start;
   margin-top: 15px;
