@@ -9,6 +9,7 @@ const Container = styled.div`
   align-items: center;
   /* background-color: #f5f5f5; */
   flex-wrap: wrap;
+  align-content: space-between;
 `;
 
 const Products = () => {

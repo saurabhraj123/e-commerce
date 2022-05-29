@@ -26,7 +26,7 @@ export const catData = [
     {
         id: 1,
         title: "SHIRT STYLE",
-        img: "https://images.pexels.com/photos/5303044/pexels-photo-5303044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        img: "https://images.pexels.com/photos/9331277/pexels-photo-9331277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
     {
         id: 2,
