@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import AddShoppingCartOutlinedIcon from '@material-ui/icons/AddShoppingCartOutlined';
 import SearchIcon from '@material-ui/icons/Search';
 import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
+import { useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
   /* flex: 1; */
@@ -60,18 +61,25 @@ const Icon = styled.div`
 `;
 
 const Product = ({ item }) => {
+  const navigate = useNavigate();
+
+  const handleLinkClick = (link) => {
+    window.scroll(0, 0, 'smooth');
+    navigate(link);
+  };
+
   return (
     <Container>
       <Image src={item.img} />
       <Info>
         <Icons>
-          <Icon>
+          <Icon onClick={() => handleLinkClick('/cart')}>
             <AddShoppingCartOutlinedIcon />
           </Icon>
-          <Icon>
+          <Icon onClick={() => handleLinkClick('/product')}>
             <SearchIcon />
           </Icon>
-          <Icon>
+          <Icon onClick={() => handleLinkClick('/cart')}>
             <FavoriteBorderOutlinedIcon />
           </Icon>
         </Icons>

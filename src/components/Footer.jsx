@@ -12,6 +12,7 @@ const Container = styled.div`
   /* align-items: center; */
   /* background-color: yellow; */
   padding: 20px;
+  /* background-color: #f6f6fb; */
 `;
 
 const Left = styled.div`

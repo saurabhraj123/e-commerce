@@ -109,54 +109,56 @@ const Button = styled.button`
 
 const Product = () => {
   return (
-    <Container>
+    <>
       <Navbar />
       <Announcement />
-      <Main>
-        <ImageContainer>
-          <Image src="https://rukminim2.flixcart.com/image/668/802/kmi2g7k0/jumpsuit/a/u/d/xxl-3810blucaroljs-stylestone-original-imagfdccgtvjyyvf.jpeg?q=50" />
-        </ImageContainer>
-        <InfoContainer>
-          <Title>Denim Jumpsuit</Title>
-          <Description>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Reprehenderit, reiciendis, nesciunt suscipit pariatur culpa eligendi
-            voluptates harum inventore possimus fugit maxime rem natus quam
-            deserunt necessitatibus saepe quo, maiores beatae?
-          </Description>
-          <Price>$20</Price>
-          <FilterContainer>
-            <Filter>
-              <FilterTitle>Color</FilterTitle>
-              <FilterColor color="black" />
-              <FilterColor color="darkblue" />
-              <FilterColor color="gray" />
-            </Filter>
-            <Filter>
-              <FilterTitle>Size</FilterTitle>
-              <FilterSize>
-                <FilterSizeOption>XS</FilterSizeOption>
-                <FilterSizeOption>S</FilterSizeOption>
-                <FilterSizeOption>M</FilterSizeOption>
-                <FilterSizeOption>L</FilterSizeOption>
-                <FilterSizeOption>XL</FilterSizeOption>
-                <FilterSizeOption>XXL</FilterSizeOption>
-              </FilterSize>
-            </Filter>
-          </FilterContainer>
-          <AddContainer>
-            <AmountContainer>
-              <Remove />
-              <Amount>1</Amount>
-              <Add />
-            </AmountContainer>
-            <Button>Add to Cart</Button>
-          </AddContainer>
-        </InfoContainer>
-      </Main>
-      <Newsletter />
-      <Footer />
-    </Container>
+      <Container>
+        <Main>
+          <ImageContainer>
+            <Image src="https://rukminim2.flixcart.com/image/668/802/kmi2g7k0/jumpsuit/a/u/d/xxl-3810blucaroljs-stylestone-original-imagfdccgtvjyyvf.jpeg?q=50" />
+          </ImageContainer>
+          <InfoContainer>
+            <Title>Denim Jumpsuit</Title>
+            <Description>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, reiciendis, nesciunt suscipit pariatur culpa
+              eligendi voluptates harum inventore possimus fugit maxime rem
+              natus quam deserunt necessitatibus saepe quo, maiores beatae?
+            </Description>
+            <Price>$20</Price>
+            <FilterContainer>
+              <Filter>
+                <FilterTitle>Color</FilterTitle>
+                <FilterColor color="black" />
+                <FilterColor color="darkblue" />
+                <FilterColor color="gray" />
+              </Filter>
+              <Filter>
+                <FilterTitle>Size</FilterTitle>
+                <FilterSize>
+                  <FilterSizeOption>XS</FilterSizeOption>
+                  <FilterSizeOption>S</FilterSizeOption>
+                  <FilterSizeOption>M</FilterSizeOption>
+                  <FilterSizeOption>L</FilterSizeOption>
+                  <FilterSizeOption>XL</FilterSizeOption>
+                  <FilterSizeOption>XXL</FilterSizeOption>
+                </FilterSize>
+              </Filter>
+            </FilterContainer>
+            <AddContainer>
+              <AmountContainer>
+                <Remove />
+                <Amount>1</Amount>
+                <Add />
+              </AmountContainer>
+              <Button>Add to Cart</Button>
+            </AddContainer>
+          </InfoContainer>
+        </Main>
+        <Newsletter />
+        <Footer />
+      </Container>
+    </>
   );
 };
 

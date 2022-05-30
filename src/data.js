@@ -2,23 +2,23 @@ export const slideData = [
     {
         id: 1,
         title: "SUMMER SALE",
-        img: "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        desc: "DON'T COMPROMISE ON STYLE. GET 30% ON ALL NEW ARRIVALS.",
+        img: "https://www.pngmart.com/files/15/Beautiful-Girl-Holding-Shopping-Bag-Transparent-PNG.png",
+        desc: "DON'T COMPROMISE ON STYLE. GET 30% off ON ALL NEW ARRIVALS.",
         bg: "#f5fafd"
     },
     {
         id: 2,
         title: "WINTER SALE",
-        img: "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        desc: "DON'T COMPROMISE ON STYLE. GET 30% ON ALL NEW ARRIVALS.",
-        bg: "#bffbfe"
+        img: "https://sp-ao.shortpixel.ai/client/q_lqip,ret_wait,w_1024,h_918/https://kidscart.store/wp-content/uploads/2021/06/1-little-girl-1024x918-1.png",
+        desc: "DON'T COMPROMISE ON STYLE. GET 30% off ON ALL NEW ARRIVALS.",
+        bg: "#DFFffE"
     },
     {
         id: 3,
         title: "POPULAR SALE",
-        img: "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        desc: "DON'T COMPROMISE ON STYLE. GET 30% ON ALL NEW ARRIVALS.",
-        bg: "#effccc"
+        img: "https://i1.wp.com/shopmidnightmirror.com/wp-content/uploads/2019/01/Fashion-PNG-Image-e1547740829245.png?fit=612%2C540&ssl=1",
+        desc: "DON'T COMPROMISE ON STYLE. GET 30% off ON ALL NEW ARRIVALS.",
+        bg: "#effffc"
     }
 ]
 
@@ -65,4 +65,23 @@ export const products = [
         id: 6,
         img: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb7%2Fb6%2Fb7b6f8d210a9ed863433a6d622400fced2b455ad.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]"
     },
+]
+
+export const cartItems = [
+    {
+        id: 949292,
+        name: "JESSIE THUNDER SHOES",
+        size: 7,
+        quantity: 2,
+        price: 30,
+        img: "https://www.libertyshoesonline.com/pub/media/catalog/product/cache/036e1f77cd3178c76f889f39e301037b/d/o/dooland_black_1.jpg"
+    },
+    {
+        id: 104929,
+        name: "COTTON CLASSIC SNEAKER",
+        size: 8,
+        quantity: 1,
+        price: 50,
+        img: "https://cdn.shopify.com/s/files/1/2428/5565/products/Neemans-IvoryCream-Cotton-Classic-Sneaker-FrontRightLogo-Comfortable-Shoes_1024x.jpg?v=1643951971"
+    }
 ]

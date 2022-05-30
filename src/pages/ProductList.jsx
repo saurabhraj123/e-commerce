@@ -47,54 +47,56 @@ const Option = styled.option`
 
 const ProductList = () => {
   return (
-    <Container>
+    <>
       <Navbar />
       <Announcement />
-      <Main>
-        <Title>Dresses</Title>
-        <FilterArea>
-          <Filter>
-            <FilterText>Filter Products:</FilterText>
-            <Select size="80px">
-              <Option disabled selected>
-                Color
-              </Option>
-              <Option>Black</Option>
-              <Option>Blue</Option>
-              <Option>Red</Option>
-              <Option>White</Option>
-              <Option>Yellow</Option>
-            </Select>
-            <Select size="70px">
-              <Option disabled selected>
-                Size
-              </Option>
-              <Option>XS</Option>
-              <Option>S</Option>
-              <Option>M</Option>
-              <Option>L</Option>
-              <Option>XL</Option>
-            </Select>
-          </Filter>
-          <Filter>
-            <FilterText>Sort Products:</FilterText>
-            <Select size="70px">
-              <Option disabled selected>
-                Size
-              </Option>
-              <Option>XS</Option>
-              <Option>S</Option>
-              <Option>M</Option>
-              <Option>L</Option>
-              <Option>XL</Option>
-            </Select>
-          </Filter>
-        </FilterArea>
-        <Products />
-      </Main>
-      <Newsletter />
-      <Footer />
-    </Container>
+      <Container>
+        <Main>
+          <Title>Dresses</Title>
+          <FilterArea>
+            <Filter>
+              <FilterText>Filter Products:</FilterText>
+              <Select size="80px">
+                <Option disabled selected>
+                  Color
+                </Option>
+                <Option>Black</Option>
+                <Option>Blue</Option>
+                <Option>Red</Option>
+                <Option>White</Option>
+                <Option>Yellow</Option>
+              </Select>
+              <Select size="70px">
+                <Option disabled selected>
+                  Size
+                </Option>
+                <Option>XS</Option>
+                <Option>S</Option>
+                <Option>M</Option>
+                <Option>L</Option>
+                <Option>XL</Option>
+              </Select>
+            </Filter>
+            <Filter>
+              <FilterText>Sort Products:</FilterText>
+              <Select size="70px">
+                <Option disabled selected>
+                  Size
+                </Option>
+                <Option>XS</Option>
+                <Option>S</Option>
+                <Option>M</Option>
+                <Option>L</Option>
+                <Option>XL</Option>
+              </Select>
+            </Filter>
+          </FilterArea>
+          <Products />
+        </Main>
+        <Newsletter />
+        <Footer />
+      </Container>
+    </>
   );
 };
 

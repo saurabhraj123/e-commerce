@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import Announcement from '../components/Announcement';
+import Navbar from '../components/Navbar';
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: url('https://images.pexels.com/photos/160751/breeze-summer-girl-model-160751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
@@ -55,18 +57,22 @@ const Link = styled.a`
 
 const Login = () => {
   return (
-    <Container>
-      <Wrapper>
-        <Form>
-          <Title>SIGN IN</Title>
-          <Input placeholder="email" type="email" />
-          <Input placeholder="password" type="password" />
-          <Button>LOGIN</Button>
-          <Link href="#">FORGOT PASSWORD?</Link>
-          <Link href="#">CREATE A NEW ACCOUNT</Link>
-        </Form>
-      </Wrapper>
-    </Container>
+    <>
+      <Navbar />
+      <Announcement />
+      <Container>
+        <Wrapper>
+          <Form>
+            <Title>SIGN IN</Title>
+            <Input placeholder="email" type="email" />
+            <Input placeholder="password" type="password" />
+            <Button>LOGIN</Button>
+            <Link href="#">FORGOT PASSWORD?</Link>
+            <Link href="#">CREATE A NEW ACCOUNT</Link>
+          </Form>
+        </Wrapper>
+      </Container>
+    </>
   );
 };
 

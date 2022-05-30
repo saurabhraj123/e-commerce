@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
 import ArrowForwardIosOutlinedIcon from '@material-ui/icons/ArrowForwardIosOutlined';
 import { slideData } from '../data';
+import { useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
   width: 100%;
@@ -34,10 +35,11 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 80%;
+  height: 85%;
 `;
 
 const InfoContainer = styled.div`
+  margin-bottom: 50px;
   flex: 1;
 `;
 
@@ -47,7 +49,7 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-  margin: 50px 0px;
+  margin: 40px 0px 50px 0px;
   font-size: 20px;
   font-weight: 500px;
   letter-spacing: 3px;
@@ -79,17 +81,22 @@ const Arrow = styled.div`
   z-index: 2;
 `;
 
-const Slider = () => {
+const Slider = ({}) => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const history = useNavigate();
 
   const handleClick = (direction) => {
     if (direction === 'left') {
-      let index = slideIndex == 0 ? 2 : slideIndex - 1;
+      let index = slideIndex === 0 ? 2 : slideIndex - 1;
       setSlideIndex(index);
-    } else if (direction == 'right') {
-      let index = slideIndex == 2 ? 0 : slideIndex + 1;
+    } else if (direction === 'right') {
+      let index = slideIndex === 2 ? 0 : slideIndex + 1;
       setSlideIndex(index);
     }
+  };
+
+  const handleShopNow = () => {
+    history('/products');
   };
 
   return (
@@ -107,7 +114,7 @@ const Slider = () => {
               <InfoContainer>
                 <Title>{slide.title}</Title>
                 <Description>{slide.desc}</Description>
-                <Button>SHOP NOW</Button>
+                <Button onClick={handleShopNow}>SHOP NOW</Button>
               </InfoContainer>
             </Slide>
           );

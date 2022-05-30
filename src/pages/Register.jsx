@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Announcement from '../components/Announcement';
+import Navbar from '../components/Navbar';
 
 const Container = styled.div`
   height: 100vh;
@@ -10,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 40%;
+  width: 41%;
   background: white;
   padding: 15px;
   box-sizing: border-box;
@@ -65,24 +67,28 @@ const Bold = styled.span`
 
 const Register = () => {
   return (
-    <Container>
-      <Wrapper>
-        <Title>CREATE AN ACCOUNT</Title>
-        <InputArea>
-          <Input placeholder="first name" type="text" />
-          <Input placeholder="last name" type="text" />
-          <Input placeholder="username" type="text" />
-          <Input placeholder="email" type="email" />
-          <Input placeholder="password" type="password" />
-          <Input placeholder="confirm password" type="password" />
-        </InputArea>
-        <Info>
-          By creating an account, I consent to the processing of my personal
-          data in accordance with <Bold>PRIVACY POLICY.</Bold>
-        </Info>
-        <Button>CREATE</Button>
-      </Wrapper>
-    </Container>
+    <>
+      <Navbar />
+      <Announcement />
+      <Container>
+        <Wrapper>
+          <Title>CREATE AN ACCOUNT</Title>
+          <InputArea>
+            <Input placeholder="first name" type="text" />
+            <Input placeholder="last name" type="text" />
+            <Input placeholder="username" type="text" />
+            <Input placeholder="email" type="email" />
+            <Input placeholder="password" type="password" />
+            <Input placeholder="confirm password" type="password" />
+          </InputArea>
+          <Info>
+            By creating an account, I consent to the processing of my personal
+            data in accordance with <Bold>PRIVACY POLICY.</Bold>
+          </Info>
+          <Button>CREATE</Button>
+        </Wrapper>
+      </Container>
+    </>
   );
 };
 

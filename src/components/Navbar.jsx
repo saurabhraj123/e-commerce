@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import Badge from '@material-ui/core/Badge';
+import { useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
   // border: 1px solid red;
@@ -48,6 +49,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: center;
+  cursor: pointer;
 `;
 
 const Right = styled.div`
@@ -64,6 +66,17 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+  };
+
+  const handleLinkClick = (linkType) => {
+    window.scroll(0, 0, 'smooth');
+    navigate(`/${linkType}`);
+  };
+
   return (
     <Container>
       <Wrapper>
@@ -75,13 +88,15 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>E-Commerce</Logo>
+          <Logo onClick={handleLogoClick}>E-Commerce</Logo>
         </Center>
         <Right>
-          <MenuItem>Log in</MenuItem>
-          <MenuItem>Sign out</MenuItem>
-          <MenuItem>
-            <Badge badgeContent={4} color="primary">
+          <MenuItem onClick={() => handleLinkClick('register')}>
+            Register
+          </MenuItem>
+          <MenuItem onClick={() => handleLinkClick('login')}>Sign In</MenuItem>
+          <MenuItem onClick={() => handleLinkClick('cart')}>
+            <Badge badgeContent={2} color="primary">
               <ShoppingCartOutlinedIcon />
             </Badge>
           </MenuItem>
